@@ -14,7 +14,6 @@
         End If
  End With
 
-'X021 BWP01R01
  ChDir sPath
  sFil = Dir("*")
  Do While sFil <> ""
