@@ -31,12 +31,12 @@
  With Application.FileDialog(msoFileDialogFilePicker)
     .Show
         If .SelectedItems.Count Then
-        [C10] = .SelectedItems(1)
+        [C10] = .SelectedItems(1) 'output full path & filename
         Else: Exit Sub
         End If
 End With
     Dim x As Variant
 
-    x = Split([C10], Application.PathSeparator)
-    [D10] = x(UBound(x))
+    x = Split([C10], Application.PathSeparator) 
+    [D10] = x(UBound(x)) 'output only filename
  ```
