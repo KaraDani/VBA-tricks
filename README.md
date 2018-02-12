@@ -1,6 +1,6 @@
 # VBA-tricks
 
-##Searching files in a folder:
+## Searching files in a folder:
 
 ```
  Dim sFil As String
