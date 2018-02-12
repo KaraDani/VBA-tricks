@@ -1,6 +1,6 @@
 # VBA-tricks
 
-## Searche files in a folder with some part of its name
+## Search files in a folder with some part of its name
 
 ```vba
  Dim sFil As String
@@ -23,4 +23,20 @@
  End If
  sFil = Dir
  Loop
+ ```
+ 
+ ## Get file location and filename on borwse
+ 
+ ```vba
+ With Application.FileDialog(msoFileDialogFilePicker)
+    .Show
+        If .SelectedItems.Count Then
+        [C10] = .SelectedItems(1)
+        Else: Exit Sub
+        End If
+End With
+    Dim x As Variant
+
+    x = Split([C10], Application.PathSeparator)
+    [D10] = x(UBound(x))
  ```
