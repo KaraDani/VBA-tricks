@@ -1,5 +1,8 @@
 # VBA-tricks
 
+##Searching files in a folder:
+
+```
  Dim sFil As String
  Dim sPath As String
 
@@ -21,3 +24,4 @@
  End If
  sFil = Dir
  Loop
+ ```
