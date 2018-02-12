@@ -2,7 +2,7 @@
 
 ## Searche files in a folder with some part of its name
 
-```
+```vba
  Dim sFil As String
  Dim sPath As String
 
