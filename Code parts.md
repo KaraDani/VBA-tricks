@@ -42,7 +42,7 @@ End With
  ```
  
  ## Empty clipboard
- '''vba 
+ ```vba
 Application.CutCopyMode = False
-'''
+ ```
  
