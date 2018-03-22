@@ -3,6 +3,8 @@
 ```vba
  Dim sFil As String
  Dim sPath As String
+ 
+ 
 
  With Application.FileDialog(msoFileDialogFolderPicker)
     .Show
@@ -38,3 +40,9 @@ End With
     x = Split([C10], Application.PathSeparator) 
     [D10] = x(UBound(x)) 'output only filename
  ```
+ 
+ ## Empty clipboard
+ '''vba 
+Application.CutCopyMode = False
+'''
+ 
